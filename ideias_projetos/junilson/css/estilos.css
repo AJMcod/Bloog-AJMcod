@@ -1,0 +1,85 @@
+                /*classes geral*/
+                
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                
+                a {
+                    text-decoration: none;
+                }
+                
+                li {
+                    list-style: none;
+                }
+                
+                body {
+                    display: flex;
+                    flex-direction: row;
+                }
+                /*===========================Estilos da 1º parte*=================*/
+                
+                .cabecalho {
+                    position: absolute;
+                    height: 100%;
+                    width: 100px;
+                    background-color: #000000;
+                }
+                
+                .cabecalho {
+                    position: fixed;
+                }
+                
+                #logo {
+                    height: 100px;
+                }
+                
+                #logo img {
+                    position: absolute;
+                    width: 200%;
+                    left: 40px;
+                    z-index: 1;
+                }
+                
+                .menu ul {
+                    display: flex;
+                    flex-direction: column;
+                }
+                
+                .menu ul li:hover {
+                    background-color: #555555;
+                }
+                
+                .cabecalho .menu ul li a img {
+                    width: 2rem;
+                    margin-left: 1rem;
+                }
+                
+                .cabecalho .menu ul li {
+                    padding: 1rem;
+                }
+                
+                .cabecalho .menu ul li a p {
+                    text-align: center;
+                    color: #ffffff;
+                }
+                /*==========================FIM===========================*/
+                /*==========estilos da 2ªparte ===============*/
+                
+                .container_principal {
+                    position: relative;
+                    margin-left: 99px;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                }
+                
+                .imagem_capa {
+                    background: url('../img/capa.jpg')no-repeat center center/cover;
+                    width: 100%;
+                    height: 750px;
+                }
+                /*==========================FIM===========================*/
+                /*=====***=====*/
+                /*==========================FIM===========================*/
