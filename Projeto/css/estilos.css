@@ -8,7 +8,7 @@
        --cor-branca: #ffffff;
        --cor-cinza-claro: #D3D3D3;
    }
-   /*classes Global*/
+   /*================classes Global==================*/
    
    * {
        margin: 0;
@@ -30,37 +30,35 @@
        font-family: 'Roboto', sans-serif;
        line-height: 1.4;
    }
+   /*===============Codigos identicos=================*/
+   
+   .cabecalho .menu ul li a p,
+   .rodape p {
+       color: #ffffff;
+       text-align: center;
+   }
+   /*==========================FIM===========================*/
    /*===========================Estilos da 1º parte*=================*/
    
    .cabecalho {
-       position: relative;
+       position: fixed;
        height: 100%;
        width: 100px;
        background-color: #000000;
-   }
-   
-   .cabecalho {
-       position: fixed;
    }
    
    #logo {
        height: 100px;
    }
    
+   .menu {
+       position: relative;
+   }
+   
    #logo img {
        position: absolute;
        width: 200%;
        left: 40px;
-       z-index: 1;
-   }
-   
-   .menu ul {
-       display: flex;
-       flex-direction: column;
-   }
-   
-   .menu ul li:hover {
-       background-color: var(--cor-cinza-claro);
    }
    
    .cabecalho .menu ul li a img {
@@ -68,23 +66,20 @@
        margin-left: 1rem;
    }
    
-   .cabecalho .menu ul li {
-       padding: 0.8rem;
+   .menu ul li:hover {
+       /*  background-color: var(--cor-cinza-claro);*/
+       box-shadow: 2px 2px 1px #ffffff;
+       cursor: pointer;
    }
    
-   .cabecalho .menu ul li a p {
-       text-align: center;
-       color: #ffffff;
+   .cabecalho .menu ul li {
+       padding: 0.8rem;
    }
    /*==========================FIM===========================*/
    /*==========estilos da 2ªparte ===============*/
    
    .container_principal {
-       position: relative;
-       margin-left: 99px;
        width: 100%;
-       height: 100%;
-       z-index: -1;
    }
    
    .imagem_capa {
@@ -106,11 +101,6 @@
        align-items: center;
        justify-content: center;
        bottom: 0;
-   }
-   
-   .rodape p {
-       color: #ffffff;
-       text-align: center;
    }
    
    .rodape img {
