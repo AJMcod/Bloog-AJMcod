@@ -1,85 +1,120 @@
-                /*classes geral*/
-                
-                * {
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                }
-                
-                a {
-                    text-decoration: none;
-                }
-                
-                li {
-                    list-style: none;
-                }
-                
-                body {
-                    display: flex;
-                    flex-direction: row;
-                }
-                /*===========================Estilos da 1º parte*=================*/
-                
-                .cabecalho {
-                    position: absolute;
-                    height: 100%;
-                    width: 100px;
-                    background-color: #000000;
-                }
-                
-                .cabecalho {
-                    position: fixed;
-                }
-                
-                #logo {
-                    height: 100px;
-                }
-                
-                #logo img {
-                    position: absolute;
-                    width: 200%;
-                    left: 40px;
-                    z-index: 1;
-                }
-                
-                .menu ul {
-                    display: flex;
-                    flex-direction: column;
-                }
-                
-                .menu ul li:hover {
-                    background-color: #555555;
-                }
-                
-                .cabecalho .menu ul li a img {
-                    width: 2rem;
-                    margin-left: 1rem;
-                }
-                
-                .cabecalho .menu ul li {
-                    padding: 1rem;
-                }
-                
-                .cabecalho .menu ul li a p {
-                    text-align: center;
-                    color: #ffffff;
-                }
-                /*==========================FIM===========================*/
-                /*==========estilos da 2ªparte ===============*/
-                
-                .container_principal {
-                    position: relative;
-                    margin-left: 99px;
-                    width: 100%;
-                    height: 100%;
-                    z-index: -1;
-                }
-                
-                .imagem_capa {
-                    background: url('../img/capa.jpg')no-repeat center center/cover;
-                    width: 100%;
-                    height: 750px;
-                }
-                /*==========================FIM===========================*/
-                /*=====***=====*/
-                /*==========================FIM===========================*/
+   @import url('https://fonts.googleapis.com/css?family=Roboto');
+    :root {
+       /*===============Cores  Serem usadas====================*/
+       --cor-preto: #000000;
+       --cor-de-fundo: #F2F2F2;
+       --cor-letra: #0f0f0f;
+       --cor-botao: #404040;
+       --cor-branca: #ffffff;
+       --cor-cinza-claro: #D3D3D3;
+   }
+   /*classes Global*/
+   
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+   
+   a {
+       text-decoration: none;
+   }
+   
+   li {
+       list-style: none;
+   }
+   
+   .blog {
+       display: flex;
+       flex-direction: row;
+       font-family: 'Roboto', sans-serif;
+       line-height: 1.4;
+   }
+   /*===========================Estilos da 1º parte*=================*/
+   
+   .cabecalho {
+       position: absolute;
+       height: 100%;
+       width: 100px;
+       background-color: #000000;
+   }
+   
+   .cabecalho {
+       position: fixed;
+   }
+   
+   #logo {
+       height: 100px;
+   }
+   
+   #logo img {
+       position: absolute;
+       width: 200%;
+       left: 40px;
+       z-index: 1;
+   }
+   
+   .menu ul {
+       display: flex;
+       flex-direction: column;
+   }
+   
+   .menu ul li:hover {
+       background-color: var(--cor-cinza-claro);
+   }
+   
+   .cabecalho .menu ul li a img {
+       width: 2.5rem;
+       margin-left: 1rem;
+   }
+   
+   .cabecalho .menu ul li {
+       padding: 0.8rem;
+   }
+   
+   .cabecalho .menu ul li a p {
+       text-align: center;
+       color: #ffffff;
+   }
+   /*==========================FIM===========================*/
+   /*==========estilos da 2ªparte ===============*/
+   
+   .container_principal {
+       position: relative;
+       margin-left: 99px;
+       width: 100%;
+       height: 100%;
+       z-index: -1;
+   }
+   
+   .imagem_capa {
+       background: url('../img/capa.jpg')no-repeat center center/cover;
+       background-attachment: fixed;
+       width: 100%;
+       height: 800px;
+   }
+   /*==========================FIM===========================*/
+   /*=====***=====*/
+   /*==========================FIM===========================*/
+   /*=====estilos da 5ªparte rodape=====*/
+   
+   .rodape {
+       background-color: #000000;
+       height: 70px;
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       bottom: 0;
+   }
+   
+   .rodape p {
+       color: #ffffff;
+       text-align: center;
+   }
+   
+   .rodape img {
+       width: 30px;
+       margin-left: 100px;
+   }
+   /*==========================FIM===========================*/
