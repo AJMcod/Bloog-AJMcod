@@ -61,18 +61,22 @@
        left: 40px;
    }
    
-   .cabecalho .menu ul li a img {
-       width: 2.5rem;
-       margin-left: 1rem;
+   .menu ul li a img {
+       width: 1.8rem;
+       margin-left: 1.5rem;
+   }
+   
+   .menu ul li a .contacto {
+       width: 1.3rem;
    }
    
    .menu ul li:hover {
        /*  background-color: var(--cor-cinza-claro);*/
-       box-shadow: 2px 2px 1px #ffffff;
+       box-shadow: 0 2px 0 #ffffff;
        cursor: pointer;
    }
    
-   .cabecalho .menu ul li {
+   .menu ul li {
        padding: 0.8rem;
    }
    /*==========================FIM===========================*/
@@ -94,6 +98,7 @@
    /*=====estilos da 5ªparte rodape=====*/
    
    .rodape {
+       position: relative;
        background-color: #000000;
        height: 70px;
        width: 100%;
@@ -103,9 +108,15 @@
        bottom: 0;
    }
    
+   .cabecalho .menu ul li a p {
+       font-size: 10pt;
+   }
+   
    .rodape img {
+       position: absolute;
        width: 30px;
-       margin-left: 100px;
+       right: 100px;
+       top: 25px;
    }
    /*==========================FIM===========================*/
    /*=====***=====*/
