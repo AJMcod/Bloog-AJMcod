@@ -1,4 +1,5 @@
    @import url('https://fonts.googleapis.com/css?family=Roboto');
+   @import url('fonts.css');
     :root {
        /*===============Cores  Serem usadas====================*/
        --cor-preto: #000000;
@@ -7,6 +8,13 @@
        --cor-botao: #404040;
        --cor-branca: #ffffff;
        --cor-cinza-claro: #D3D3D3;
+       /*Font family*/
+       --Abel: 'Abel', cursive;
+       --Anton: 'Anton', cursive;
+       --Josefin: 'Josefin', cursive;
+       --Lexend: 'Lexend', cursive;
+       --Livvic: 'Livvic', cursive;
+       /*Fim Font family*/
    }
    /*================classes Global==================*/
    
@@ -27,15 +35,18 @@
    .blog {
        display: flex;
        flex-direction: row;
-       font-family: 'Roboto', sans-serif;
+       font-family: var(--Lexend);
+       font-weight: bold;
        line-height: 1.4;
+       /*  font-family: 'Roboto', sans-serif;*/
    }
    /*===============Codigos identicos=================*/
    
    .cabecalho .menu ul li a p,
    .rodape p {
-       color: #ffffff;
+       color: var(--cor-branca);
        text-align: center;
+       font-size: 10pt;
    }
    /*==========================FIM===========================*/
    /*===========================Estilos da 1º parte*=================*/
@@ -44,7 +55,7 @@
        position: fixed;
        height: 100%;
        width: 100px;
-       background-color: #000000;
+       background-color: var(--cor-preto)
    }
    
    #logo {
@@ -72,6 +83,7 @@
    
    .menu ul li:hover {
        /*  background-color: var(--cor-cinza-claro);*/
+       /*  border-right: 1px solid var(--cor-branca);*/
        box-shadow: 0 2px 0 #ffffff;
        cursor: pointer;
    }
@@ -89,27 +101,308 @@
    .imagem_capa {
        background: url('../img/capa.jpg')no-repeat center center/cover;
        background-attachment: fixed;
+       color: var(--cor-branca);
+       display: flex;
+       justify-content: flex-end;
+       padding: 0 1rem;
+       font-family: var(--Anton);
+       text-transform: uppercase;
+       align-items: flex-end;
        width: 100%;
-       height: 800px;
+       height: 100vh;
    }
    /*==========================FIM===========================*/
+   /*=======frases de motivacao==================*/
+   
+   .frases_motivacao {
+       padding-left: 7rem;
+       font-family: var(--Abel);
+       padding-top: 1rem;
+       padding-right: 1rem;
+       height: 100px;
+       width: 100%;
+       background-color: var(--cor-de-fundo);
+   }
+   
+   .slyde {
+       margin-top: 10px;
+       height: 100%;
+   }
+   
+   .autor {
+       display: flex;
+       justify-content: end;
+       align-items: flex-end;
+   }
+   
+   .farses {
+       text-align: center;
+   }
+   
+   .title-frase {
+       text-align: center;
+       border-radius: 4px;
+       font-family: var(--Abel);
+       padding: 0.1rem 0.1rem;
+   }
+   
+   .slyde-frase {
+       animation: 1s slyde ease-in-out alternate-reverse;
+       animation-delay: 5s;
+   }
+   
+   @keyframes slyde {
+       to {
+           transform: translateX(98%);
+       }
+   }
+   /*=======fim frases de motivacao==================*/
+   /*=====carrocel=======*/
+   
+   .imgCod {
+       font-family: var(--Abel);
+       background: var(--cor-branca);
+       display: flex;
+       justify-content: center;
+       justify-content: center;
+   }
+   
+   .carroce-fundo {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding: 1rem 0;
+       justify-content: center;
+       margin: 20px;
+       box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.2);
+   }
+   
+   .carrocel {
+       display: flex;
+   }
+   
+   .margin-carrocel {
+       width: 250px;
+       height: 200px;
+   }
+   
+   .btn-carrocel {
+       display: flex;
+       align-items: center;
+   }
+   
+   .carroca-1 {
+       animation: esquerda 0.1s ease-in-out backwards alternate-reverse;
+       display: flex;
+   }
+   
+   @keyframes esquerda {
+       to {
+           transform: translateX(3.1%);
+       }
+   }
+   
+   .carroca {
+       animation: direita 0.1s ease-in-out backwards alternate-reverse;
+       display: flex;
+   }
+   
+   @keyframes direita {
+       to {
+           transform: translateX(3.1%);
+       }
+   }
+   /*=====Fim carrocel=======*/
+   /*======Sobre nós========*/
+   
+   .centralizado {
+       width: 100%;
+       display: flex;
+       justify-content: center;
+   }
+   
+   .txtSbre {
+       padding: 1rem 2rem;
+       font-family: var(--Abel);
+   }
+   
+   .txt-borda {
+       font-size: 1.5rem;
+       font-family: var(--Abel);
+       margin-right: 10px;
+   }
+   
+   .icone-borda {
+       width: 30px;
+   }
+   
+   .borda {
+       text-align: center;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 0.5rem 0rem;
+       background: var(--cor-preto);
+       color: var(--cor-branca);
+   }
+   
+   .ver_equpe {
+       display: flex;
+       justify-content: flex-end;
+       padding: 2rem 1rem;
+   }
+   
+   .icone-blog {
+       height: 30px;
+       height: 30px;
+   }
+   
+   .ver_equi_contorno {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: row;
+       background: var(--cor-botao);
+       padding: 0.4rem 1rem;
+       border-radius: 8px;
+   }
+   
+   .ver_equpe .ver_equi_cor {
+       color: var(--cor-branca);
+       font-family: var(--Abel);
+   }
+   
+   .todos_responsaveis {
+       padding: 0rem 2rem;
+   }
+   
+   .txt-responsavel {
+       border-bottom: 1px solid var(--cor-preto);
+       display: inline;
+   }
+   
+   .fundo {
+       background: var(--cor-de-fundo);
+       width: 1000px;
+   }
+   
+   .foto-1,
+   .foto-2 {
+       height: 150px;
+       width: 150px;
+       margin-top: 10px;
+       margin-right: 10px;
+       border-radius: 100%;
+       background: var(--cor-preto);
+   }
+   
+   .meio p {
+       margin-top: 10px;
+   }
+   
+   .meio {
+       display: flex;
+       font-family: var(--Abel);
+       justify-content: center;
+       flex-direction: column;
+   }
+   
+   .responsavel {
+       display: flex;
+       flex-direction: row;
+   }
+   /*======Fim Sobre nós========*/
+   /*=======Projectos===========*/
+   
+   .projecto-1 {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin-bottom: 20px;
+   }
+   
+   .cf {
+       width: 10rem;
+   }
+   /*======= FIM Projectos===========*/
+   /*=========Parceiros============*/
+   
+   .parceiros {
+       height: 200px;
+   }
+   /*=========Fim Parceiros============*/
+   /*========Contacto==============*/
+   
+   .contacto {
+       font-family: var(--Abel);
+   }
+   
+   .contacto-linhas {
+       display: flex;
+       align-items: center;
+       padding-left: 2rem;
+       margin-top: 30px;
+       margin-bottom: 40px;
+       flex-direction: row;
+   }
+   
+   .contacto-icones {
+       margin-right: 10px;
+       width: 40px;
+       height: 40px;
+   }
+   
+   .btn-form-enviar {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       background: var(--cor-botao);
+       color: var(--cor-branca);
+       padding: 0.3rem 9rem;
+       border: none;
+       margin: 20px;
+       border-radius: 1rem;
+   }
+   
+   .contacto-icones-1 {
+       height: 30px;
+       width: 30px;
+   }
+   
+   .form {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+   }
+   
+   .form-enviar {
+       padding: 0rem 2rem;
+   }
+   
+   .input-form {
+       margin-top: 20px;
+       border: none;
+       padding: 0 1rem;
+       border-radius: 5px;
+       width: 100%;
+   }
+   /*========Fim Contacto==============*/
    /*=====??parte=====*/
    /*==========================FIM===========================*/
    /*=====estilos da 5ªparte rodape=====*/
    
    .rodape {
-       position: relative;
-       background-color: #000000;
+       background-color: var(--cor-preto);
        height: 70px;
        width: 100%;
        display: flex;
+       flex-direction: column;
        align-items: center;
        justify-content: center;
        bottom: 0;
-   }
-   
-   .cabecalho .menu ul li a p {
-       font-size: 10pt;
+       position: relative;
    }
    
    .rodape img {
